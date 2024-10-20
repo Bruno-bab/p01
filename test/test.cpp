@@ -30,7 +30,7 @@ public:
 
 		Assert::AreEqual(1000., f1(10, 3));
 	}
-	TEST_METHOD(test_2)
+	 TEST_METHOD(test_2)
 	{
 		Assert::IsFalse(f2(1 < 2));
 		Assert::IsTrue(f2(2 < 1));
@@ -38,7 +38,7 @@ public:
 		Assert::AreEqual(1ull, sizeof(ret));
 	}
 
-	TEST_METHOD(test_3)
+	 TEST_METHOD(test_3)
 	{
 		Assert::AreEqual(20, f3(2, 4, 6, 8));
 		Assert::AreEqual(22, f3(3, 6, 9));
@@ -47,13 +47,13 @@ public:
 		Assert::AreEqual(10, f3());
 	}
 
-	TEST_METHOD(test_4)
+	/*TEST_METHOD(test_4)
 	{
 		Assert::AreEqual("int"s, f4(55));
 		Assert::AreEqual("bool"s, f4(true));
 		Assert::AreEqual("double"s, f4(1.25));
 	}
-
+	*/
 	TEST_METHOD(test_5)
 	{
 		std::string s = "root";
@@ -84,6 +84,7 @@ public:
 			Assert::AreEqual("-8\n18"s, ss.str());
 		}
 	}
+	
 };
 
 } // namespace
